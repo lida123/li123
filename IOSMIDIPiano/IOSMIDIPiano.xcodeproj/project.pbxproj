@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C8EA5871E49A65D00B6D88B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EA5861E49A65D00B6D88B /* main.m */; };
+		9C8EA58A1E49A65D00B6D88B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EA5891E49A65D00B6D88B /* AppDelegate.m */; };
+		9C8EA58D1E49A65D00B6D88B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EA58C1E49A65D00B6D88B /* ViewController.m */; };
+		9C8EA5901E49A65D00B6D88B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8EA58E1E49A65D00B6D88B /* Main.storyboard */; };
+		9C8EA5921E49A65D00B6D88B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8EA5911E49A65D00B6D88B /* Assets.xcassets */; };
+		9C8EA5951E49A65D00B6D88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8EA5931E49A65D00B6D88B /* LaunchScreen.storyboard */; };
+		9CC38EBA1E49C11E00399509 /* MidiFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38EB91E49C11E00399509 /* MidiFile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38EBD1E49C1BD00399509 /* Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38EBC1E49C1BD00399509 /* Array.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38EC01E49C1DE00399509 /* IntArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38EBF1E49C1DE00399509 /* IntArray.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38EC31E49C1F300399509 /* TimeSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38EC21E49C1F300399509 /* TimeSignature.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38EC61E49C20900399509 /* MidiEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38EC51E49C20900399509 /* MidiEvent.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38EC91E49C27500399509 /* MidiNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38EC81E49C27500399509 /* MidiNote.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38ECC1E49C29600399509 /* MidiTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38ECB1E49C29600399509 /* MidiTrack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38ECF1E49C2C000399509 /* MidiFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38ECE1E49C2BF00399509 /* MidiFileReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38ED21E49C2D500399509 /* MidiOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38ED11E49C2D500399509 /* MidiOptions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38ED51E49C31F00399509 /* MidiFileException.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38ED41E49C31F00399509 /* MidiFileException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CC38ED81E49C47000399509 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38ED71E49C47000399509 /* JSONKit.m */; };
+		9CC38EDB1E49C48500399509 /* NSDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38EDA1E49C48500399509 /* NSDictionary+Extensions.m */; };
+		9CC38EDE1E49C50900399509 /* NSMutableDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC38EDD1E49C50900399509 /* NSMutableDictionary+Extensions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C8EA5821E49A65D00B6D88B /* IOSMIDIPiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSMIDIPiano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8EA5861E49A65D00B6D88B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C8EA5881E49A65D00B6D88B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C8EA5891E49A65D00B6D88B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C8EA58B1E49A65D00B6D88B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9C8EA58C1E49A65D00B6D88B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9C8EA58F1E49A65D00B6D88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C8EA5911E49A65D00B6D88B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C8EA5941E49A65D00B6D88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C8EA5961E49A65D00B6D88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC38EB81E49C11E00399509 /* MidiFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiFile.h; sourceTree = "<group>"; };
+		9CC38EB91E49C11E00399509 /* MidiFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiFile.m; sourceTree = "<group>"; };
+		9CC38EBB1E49C1BD00399509 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		9CC38EBC1E49C1BD00399509 /* Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Array.m; sourceTree = "<group>"; };
+		9CC38EBE1E49C1DE00399509 /* IntArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntArray.h; sourceTree = "<group>"; };
+		9CC38EBF1E49C1DE00399509 /* IntArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntArray.m; sourceTree = "<group>"; };
+		9CC38EC11E49C1F300399509 /* TimeSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSignature.h; sourceTree = "<group>"; };
+		9CC38EC21E49C1F300399509 /* TimeSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSignature.m; sourceTree = "<group>"; };
+		9CC38EC41E49C20900399509 /* MidiEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiEvent.h; sourceTree = "<group>"; };
+		9CC38EC51E49C20900399509 /* MidiEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiEvent.m; sourceTree = "<group>"; };
+		9CC38EC71E49C27500399509 /* MidiNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiNote.h; sourceTree = "<group>"; };
+		9CC38EC81E49C27500399509 /* MidiNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiNote.m; sourceTree = "<group>"; };
+		9CC38ECA1E49C29600399509 /* MidiTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiTrack.h; sourceTree = "<group>"; };
+		9CC38ECB1E49C29600399509 /* MidiTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiTrack.m; sourceTree = "<group>"; };
+		9CC38ECD1E49C2BF00399509 /* MidiFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiFileReader.h; sourceTree = "<group>"; };
+		9CC38ECE1E49C2BF00399509 /* MidiFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiFileReader.m; sourceTree = "<group>"; };
+		9CC38ED01E49C2D500399509 /* MidiOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiOptions.h; sourceTree = "<group>"; };
+		9CC38ED11E49C2D500399509 /* MidiOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiOptions.m; sourceTree = "<group>"; };
+		9CC38ED31E49C31F00399509 /* MidiFileException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiFileException.h; sourceTree = "<group>"; };
+		9CC38ED41E49C31F00399509 /* MidiFileException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiFileException.m; sourceTree = "<group>"; };
+		9CC38ED61E49C47000399509 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		9CC38ED71E49C47000399509 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		9CC38ED91E49C48500399509 /* NSDictionary+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extensions.h"; sourceTree = "<group>"; };
+		9CC38EDA1E49C48500399509 /* NSDictionary+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extensions.m"; sourceTree = "<group>"; };
+		9CC38EDC1E49C50900399509 /* NSMutableDictionary+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Extensions.h"; sourceTree = "<group>"; };
+		9CC38EDD1E49C50900399509 /* NSMutableDictionary+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Extensions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C8EA57F1E49A65D00B6D88B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C8EA5791E49A65D00B6D88B = {
+			isa = PBXGroup;
+			children = (
+				9C8EA5841E49A65D00B6D88B /* IOSMIDIPiano */,
+				9C8EA5831E49A65D00B6D88B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C8EA5831E49A65D00B6D88B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C8EA5821E49A65D00B6D88B /* IOSMIDIPiano.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C8EA5841E49A65D00B6D88B /* IOSMIDIPiano */ = {
+			isa = PBXGroup;
+			children = (
+				9CC38EB71E49C0E600399509 /* MidiLib */,
+				9C8EA5881E49A65D00B6D88B /* AppDelegate.h */,
+				9C8EA5891E49A65D00B6D88B /* AppDelegate.m */,
+				9C8EA58B1E49A65D00B6D88B /* ViewController.h */,
+				9C8EA58C1E49A65D00B6D88B /* ViewController.m */,
+				9C8EA58E1E49A65D00B6D88B /* Main.storyboard */,
+				9C8EA5911E49A65D00B6D88B /* Assets.xcassets */,
+				9C8EA5931E49A65D00B6D88B /* LaunchScreen.storyboard */,
+				9C8EA5961E49A65D00B6D88B /* Info.plist */,
+				9C8EA5851E49A65D00B6D88B /* Supporting Files */,
+			);
+			path = IOSMIDIPiano;
+			sourceTree = "<group>";
+		};
+		9C8EA5851E49A65D00B6D88B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C8EA5861E49A65D00B6D88B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CC38EB71E49C0E600399509 /* MidiLib */ = {
+			isa = PBXGroup;
+			children = (
+				9CC38EDC1E49C50900399509 /* NSMutableDictionary+Extensions.h */,
+				9CC38EDD1E49C50900399509 /* NSMutableDictionary+Extensions.m */,
+				9CC38ED91E49C48500399509 /* NSDictionary+Extensions.h */,
+				9CC38EDA1E49C48500399509 /* NSDictionary+Extensions.m */,
+				9CC38ED61E49C47000399509 /* JSONKit.h */,
+				9CC38ED71E49C47000399509 /* JSONKit.m */,
+				9CC38ED31E49C31F00399509 /* MidiFileException.h */,
+				9CC38ED41E49C31F00399509 /* MidiFileException.m */,
+				9CC38ED01E49C2D500399509 /* MidiOptions.h */,
+				9CC38ED11E49C2D500399509 /* MidiOptions.m */,
+				9CC38ECD1E49C2BF00399509 /* MidiFileReader.h */,
+				9CC38ECE1E49C2BF00399509 /* MidiFileReader.m */,
+				9CC38ECA1E49C29600399509 /* MidiTrack.h */,
+				9CC38ECB1E49C29600399509 /* MidiTrack.m */,
+				9CC38EC71E49C27500399509 /* MidiNote.h */,
+				9CC38EC81E49C27500399509 /* MidiNote.m */,
+				9CC38EC41E49C20900399509 /* MidiEvent.h */,
+				9CC38EC51E49C20900399509 /* MidiEvent.m */,
+				9CC38EC11E49C1F300399509 /* TimeSignature.h */,
+				9CC38EC21E49C1F300399509 /* TimeSignature.m */,
+				9CC38EBE1E49C1DE00399509 /* IntArray.h */,
+				9CC38EBF1E49C1DE00399509 /* IntArray.m */,
+				9CC38EBB1E49C1BD00399509 /* Array.h */,
+				9CC38EBC1E49C1BD00399509 /* Array.m */,
+				9CC38EB81E49C11E00399509 /* MidiFile.h */,
+				9CC38EB91E49C11E00399509 /* MidiFile.m */,
+			);
+			path = MidiLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C8EA5811E49A65D00B6D88B /* IOSMIDIPiano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C8EA5991E49A65D00B6D88B /* Build configuration list for PBXNativeTarget "IOSMIDIPiano" */;
+			buildPhases = (
+				9C8EA57E1E49A65D00B6D88B /* Sources */,
+				9C8EA57F1E49A65D00B6D88B /* Frameworks */,
+				9C8EA5801E49A65D00B6D88B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSMIDIPiano;
+			productName = IOSMIDIPiano;
+			productReference = 9C8EA5821E49A65D00B6D88B /* IOSMIDIPiano.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C8EA57A1E49A65D00B6D88B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = xuyuan;
+				TargetAttributes = {
+					9C8EA5811E49A65D00B6D88B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PS6M6WK5N2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9C8EA57D1E49A65D00B6D88B /* Build configuration list for PBXProject "IOSMIDIPiano" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C8EA5791E49A65D00B6D88B;
+			productRefGroup = 9C8EA5831E49A65D00B6D88B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C8EA5811E49A65D00B6D88B /* IOSMIDIPiano */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C8EA5801E49A65D00B6D88B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8EA5951E49A65D00B6D88B /* LaunchScreen.storyboard in Resources */,
+				9C8EA5921E49A65D00B6D88B /* Assets.xcassets in Resources */,
+				9C8EA5901E49A65D00B6D88B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C8EA57E1E49A65D00B6D88B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC38EBA1E49C11E00399509 /* MidiFile.m in Sources */,
+				9C8EA58D1E49A65D00B6D88B /* ViewController.m in Sources */,
+				9CC38EBD1E49C1BD00399509 /* Array.m in Sources */,
+				9CC38EC61E49C20900399509 /* MidiEvent.m in Sources */,
+				9CC38ECF1E49C2C000399509 /* MidiFileReader.m in Sources */,
+				9CC38EC91E49C27500399509 /* MidiNote.m in Sources */,
+				9CC38ED51E49C31F00399509 /* MidiFileException.m in Sources */,
+				9C8EA58A1E49A65D00B6D88B /* AppDelegate.m in Sources */,
+				9CC38EDB1E49C48500399509 /* NSDictionary+Extensions.m in Sources */,
+				9CC38EC31E49C1F300399509 /* TimeSignature.m in Sources */,
+				9C8EA5871E49A65D00B6D88B /* main.m in Sources */,
+				9CC38ECC1E49C29600399509 /* MidiTrack.m in Sources */,
+				9CC38EC01E49C1DE00399509 /* IntArray.m in Sources */,
+				9CC38ED81E49C47000399509 /* JSONKit.m in Sources */,
+				9CC38EDE1E49C50900399509 /* NSMutableDictionary+Extensions.m in Sources */,
+				9CC38ED21E49C2D500399509 /* MidiOptions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C8EA58E1E49A65D00B6D88B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C8EA58F1E49A65D00B6D88B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C8EA5931E49A65D00B6D88B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C8EA5941E49A65D00B6D88B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C8EA5971E49A65D00B6D88B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9C8EA5981E49A65D00B6D88B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C8EA59A1E49A65D00B6D88B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PS6M6WK5N2;
+				INFOPLIST_FILE = IOSMIDIPiano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.app.IOSMIDIPiano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C8EA59B1E49A65D00B6D88B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PS6M6WK5N2;
+				INFOPLIST_FILE = IOSMIDIPiano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.app.IOSMIDIPiano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C8EA57D1E49A65D00B6D88B /* Build configuration list for PBXProject "IOSMIDIPiano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8EA5971E49A65D00B6D88B /* Debug */,
+				9C8EA5981E49A65D00B6D88B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C8EA5991E49A65D00B6D88B /* Build configuration list for PBXNativeTarget "IOSMIDIPiano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8EA59A1E49A65D00B6D88B /* Debug */,
+				9C8EA59B1E49A65D00B6D88B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C8EA57A1E49A65D00B6D88B /* Project object */;
+}
